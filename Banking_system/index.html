@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            color: #333;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .section {
+            background-color: #fff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .output {
+            margin-top: 10px;
+            background: #e7f3ff;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Banking System</h1>
+
+    
+    <div class="section">
+        <h3>Create Account</h3>
+        <input type="text" id="createName" placeholder="Enter Name">
+        <input type="number" id="createDeposit" placeholder="Initial Deposit">
+        <button onclick="handleCreate()">Create Account</button>
+        <div class="output" id="createOutput"></div>
+    </div>
+
+    <div class="section">
+        <h3>Display Account</h3>
+        <input type="number" id="displayAccountNo" placeholder="Account Number">
+        <button onclick="handleDisplay()">Display</button>
+        <div class="output" id="displayOutput"></div>
+    </div>
+
+
+    <div class="section">
+        <h3>Deposit Money</h3>
+        <input type="number" id="depositAccountNo" placeholder="Account Number">
+        <input type="number" id="depositAmount" placeholder="Amount">
+        <button onclick="handleDeposit()">Deposit</button>
+        <div class="output" id="depositOutput"></div>
+    </div>
+
+
+    <div class="section">
+        <h3>Withdraw Money</h3>
+        <input type="number" id="withdrawAccountNo" placeholder="Account Number">
+        <input type="number" id="withdrawAmount" placeholder="Amount">
+        <button onclick="handleWithdraw()">Withdraw</button>
+        <div class="output" id="withdrawOutput"></div>
+    </div>
+
+    
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
