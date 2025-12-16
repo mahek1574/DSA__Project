@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Algorithms </title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f9f9f9e8;
+}
+
+.controls {
+  margin: 20px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+
+  <h1> Search Algorithms</h1>
+
+  <div class="controls">
+    <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
+    <input type="number" id="searchValue" placeholder="Number to search">
+    
+    <button onclick="linearSearch()">Linear Search</button>
+    <button onclick="binarySearch()">Binary Search</button>
+  </div>
+
+  <h2>Result:</h2>
+  <p id="result"></p>
+
+  <script src="catagorizing.js"></script>
+</body>
+</html>
