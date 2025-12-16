@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Assortment System</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h2>Product Assortment System</h2>
+
+  <input type="text" id="name" placeholder="Product Name">
+  <input type="number" id="price" placeholder="Price">
+  <button onclick="addProduct()">Add Product</button>
+
+  <br><br>
+
+  <button onclick="sortLowToHigh()">Sort Price Low → High</button>
+  <button onclick="sortHighToLow()">Sort Price High → Low</button>
+  <button onclick="sortByName()">Sort By Name</button>
+
+  <br><br>
+
+  <input type="text" id="search" placeholder="Search Product">
+  <button onclick="searchProduct()">Search</button>
+
+  <h3>Products List</h3>
+  <ul id="list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
