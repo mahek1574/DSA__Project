@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Memory allocation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            width: 150px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4cacaf;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #4a8f8b;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+            background-color: #e0e7ff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            width: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Memory allocation</h1>
+
+    <input type="number" id="numInput" placeholder="Enter a number">
+    <button onclick="insertNode()">Insert Node</button>
+    <button onclick="deleteNode()">Delete Last Node</button>
+    <button onclick="showMemory()">Show Memory</button>
+
+    <p id="listDisplay">Linked List: []</p>
+    <p id="memoryDisplay">Memory Used: 0 bytes</p>
+    </body>
+    <script src="Memory-allocation.js"></script>
+    </html>
